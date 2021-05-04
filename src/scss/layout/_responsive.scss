@@ -24,89 +24,89 @@ TABLE OF CONTENTS
 1. Tablet Portrait
 ========================================================================== */
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-    //Navbar
-    .navbar {
-        .navbar-item {
-            &.is-nav-link {
-                text-align: center !important;
-            }
-        }
+// @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+//     //Navbar
+//     .navbar {
+//         .navbar-item {
+//             &.is-nav-link {
+//                 text-align: center !important;
+//             }
+//         }
 
-        .button.slanted {
-            width: 100% !important;
-        }
+//         .button.slanted {
+//             width: 100% !important;
+//         }
 
-        .navbar-menu.is-active {
-            &.light-menu {
-                background: $color3 !important;
-            }
-        }
+//         .navbar-menu.is-active {
+//             &.light-menu {
+//                 background: $color3 !important;
+//             }
+//         }
 
-        &.is-light.is-dark-mobile {
-            background: $color3 !important;
-        }
-    }
+//         &.is-light.is-dark-mobile {
+//             background: $color3 !important;
+//         }
+//     }
 
-    .landing-caption {
-        padding: 0 10%;
+//     .landing-caption {
+//         padding: 0 10%;
 
-        .divider {
-            margin: 0 auto;
-        }
+//         .divider {
+//             margin: 0 auto;
+//         }
 
-        h1, h2, p {
-            text-align: center !important;
-        }
+//         h1, h2, p {
+//             text-align: center !important;
+//         }
 
-        h1 {
-            padding: 0 10%;
-        }
-    }
+//         h1 {
+//             padding: 0 10%;
+//         }
+//     }
 
-    //features
-    .feature p {
-        padding: 0 25%;
-    }
+//     //features
+//     .feature p {
+//         padding: 0 25%;
+//     }
 
-    //Side features
-    .side-feature-content {
-        text-align: center;
+//     //Side features
+//     .side-feature-content {
+//         text-align: center;
 
-        img {
-            display: block;
-            margin: 10px auto;
-        }
+//         img {
+//             display: block;
+//             margin: 10px auto;
+//         }
 
-        .divider {
-            margin: 0 auto;
-        }
+//         .divider {
+//             margin: 0 auto;
+//         }
 
-        p {
-            padding: 0 12%;
-        }
-    }
+//         p {
+//             padding: 0 12%;
+//         }
+//     }
 
-    //tabs
-    .flying-wrapper {
-        ul {
-            .item-content {
-                font-size: 80% !important;
-            }
-        }
-    }
+//     //tabs
+//     .flying-wrapper {
+//         ul {
+//             .item-content {
+//                 font-size: 80% !important;
+//             }
+//         }
+//     }
 
-    //team
-    .team-member-container {
-        margin: 0 25%;
-    }
-}
+//     //team
+//     .team-member-container {
+//         margin: 0 25%;
+//     }
+// }
 
 /* ==========================================================================
 2. Mobile
 ========================================================================== */
 
-@media (max-width: 767px) {
+@media screen and (max-width: 1024px) {
     //Navbar
     .navbar {
         .navbar-item {
@@ -123,6 +123,8 @@ TABLE OF CONTENTS
             &.light-menu {
                 background: $color3 !important;
             }
+            position: absolute;
+            left: 0 !important;
         }
 
         &.is-light.is-dark-mobile {
