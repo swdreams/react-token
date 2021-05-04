@@ -106,6 +106,15 @@ TABLE OF CONTENTS
 2. Mobile
 ========================================================================== */
 
+@media (max-width: 768px) {
+    .hero{
+        .landing-caption {
+            .subtitle{
+                max-width: unset;
+            }
+        }
+    }
+}
 @media screen and (max-width: 1024px) {
     //Navbar
     .navbar {
@@ -148,6 +157,9 @@ TABLE OF CONTENTS
 
         h2 {
             font-size: 1.05rem !important;
+        }
+        .buttons{
+            justify-content: center;
         }
     }
 
