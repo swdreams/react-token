@@ -1,0 +1,148 @@
+---
+layout: default
+title: HowToBuy
+---
+
+<div class="htb-wrapper" x-data="howToBuy()" x-init="init()">
+    <!-- Landing page Hero -->
+    <section class="hero is-medium">
+        <div class="hero-head">
+
+            <!-- Cloned navbar -->
+            {{> navbar-clone}}
+
+            <!-- Static navbar -->
+            {{> navbar}}
+
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="htb_desc columns">
+                <div class="column is-6">
+                    <span>How to Buy Safemoon</span>
+                    <p>A step by step guide on how to buy safemoon from Pancakeswap</p>
+                </div>
+                <div class="column is-6">
+                    <div class="columns">
+                        <div class="column is-6"></div>
+                        <div class="column is-6 btn_pancake">
+                            <a id="pancake-link" href="#" class="buy_btn btn-white btn-animate" target="_blank">Buy on Pancake</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="htb_content columns">
+                <div class="column is-6 htb_left_content">
+                    <div class="htb_left_title">
+                        <span>How to Buy Safemoon</span>
+                    </div>
+                    <div>
+                        <button class="tablink" onclick="openPage('Pancake', this, '#00215E')"
+                            id="defaultOpen">Pancake</button>
+                        <button class="tablink" onclick="openPage('Exchanges', this, '#00215E')">Exchanges</button>
+                        <button class="tablink" onclick=""></button>
+                        <button class="tablink" onclick=""></button>
+
+                        <div id="Pancake" class="tabcontent">
+                            <p>1.Download the app</p>
+                            <p>2.Purchase BNB or BSC using Trustwallet</p>
+                            <p>3.Go to the DApps(or Browser for iPhone) tab at the bottom and find PancakeSwap.
+                                iPhone
+                                users
+                                will have to enable the browser within TrustWallet by typing within Safari.</p>
+                            <p>4.On Pancake swap, in the "From" slot select BNB or BSC, depending on which one you
+                                bought.
+                                In the bottom slot tap "Select currency" to search, and search for and select
+                                "Safemoon".
+                            </p>
+                            <p>5.Click the icon at the top, at set the slippage tolerance to 11% then close that
+                                box.
+                            </p>
+                            <p>6.Set the amount you wish to buy in the "From" box, and press the swap button.</p>
+                            <p>7.Confirm the transaction and...</p>
+                            <div class="align_center">
+                                <a>HOLD</a>
+                            </div>
+                        </div>
+                        <div id="Exchanges" class="tabcontent">
+                            <p>Over time, SafeMoon may be listed on multiple exchanges to make buying easier. Here's
+                                a
+                                list
+                                of the most popular ones.
+                                Buying Safemoon on their platform is based on their pairing with Safemoon, which is
+                                typically USDT. You can buy USDT on
+                                their platform directly, then swap it for SafeMoon.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column is-6 htb_right_content">
+                    <div class="htb_address">
+                        <div class="columns" style="padding-left: 20px;">
+                            <div class="column is-2 address_col">
+                                <div>
+                                    <span>Address</span>
+                                </div>
+                            </div>
+                            <div class="column is-8 address_col">
+                                <div>
+                                    <span id="address-desc"></span>
+                                    <input type="text" value=""
+                                        id="address" />
+                                </div>
+                            </div>
+                            <div class="column is-2 address_col">
+                                <button class="copy_btn tooltip" onclick="myFunction()" onmouseout="outFunc()">
+                                    <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+                                    <img class="telegram" src="/img/logo/telegram.svg" alt="">Copy
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="htb_address_desc">
+                        <span class="wanning">What is this address?</span>
+                        <p>The contact address is used to locate us on PancakeSwap. This is not a wallet, do not
+                            send
+                            token to it!. You will get nothing, and we have no way to refund it.</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+</div>
+</div>
+<script>
+    function openPage(pageName, elmnt, color) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].style.backgroundColor = "";
+        }
+        document.getElementById(pageName).style.display = "block";
+        elmnt.style.backgroundColor = color;
+    }
+
+    function myFunction() {
+        var copyText = document.getElementById("address");
+        console.log(copyText);
+        copyText.select();
+        copyText.setSelectionRange(0, 99999);
+        document.execCommand("copy");
+
+        var tooltip = document.getElementById("myTooltip");
+        tooltip.innerHTML = "Copied Successfully!";
+    }
+
+    function outFunc() {
+        var tooltip = document.getElementById("myTooltip");
+        tooltip.innerHTML = "Copy to clipboard!";
+    }
+
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+</script>

@@ -1,0 +1,170 @@
+---
+layout: default
+title: Whitepaper
+---
+
+<div class="whitepaper-wrapper">
+    <!-- Landing page Hero -->
+    <section class="hero is-medium">
+        <div class="hero-head">
+
+            <!-- Cloned navbar -->
+            {{> navbar-clone}}
+
+            <!-- Static navbar -->
+            {{> navbar}}
+
+        </div>
+    </section>
+    <section>
+        <div class="container paddingtop whitepaper">
+            <span>SafeMoon Protocol WhitePaper</span>
+            <p>A common misconception with the heavy APY average is the subjectivity of
+                the impermanent loss from staking an LP
+                (liquidity provider) in a farming reward generator. With the explosion of DeFi we have seen too many new
+                cryptocurrency
+                prospectors get sucked into a high APY LP-farming trap, feeling hopeless as they are pushed out by
+                earlier buyers with
+                higher staking rewards. We’ve all been there, seeing those shiny 6 digit figures can be pretty damn
+                tempting to jump in.</p>
+            <p class="marginbottom">However, almost always the token suffers from the inevitable valuation bubble, which
+                is then
+                followed by
+                the burst and
+                the impending collapse of the price. This is why we have seen the mass adoption of static rewards, also
+                known as
+                reflection, a separate concept that seeks to eliminate the troubles caused by farming rewards.</p>
+            <span>Why Static?</span>
+            <p class="marginbottom">Static rewards solve a host of problems. First, the reward amount is conditional
+                upon
+                the volume of the token being
+                traded. This mechanism aims to alleviate some of the downward sell pressure put on the token caused by
+                earlier adopters
+                selling their tokens after farming crazy high APY’s. Second, the reflect mechanism encourages holders to
+                hang onto their
+                tokens to garner higher kick-backs which are based upon a percentages carried out and dependant upon the
+                total tokens
+                held by the owner.</p>
+            <span>Automatic Liquidity Pool (LP)</span>
+            <p>Automatic LP is the secret sauce of SAFEMOON. Here we have a function
+                that acts as a two-fold beneficial implementation for holders.</p>
+            <p>
+                First, the contract sucks up tokens from sellers and buyers alike, and adds them to the LP creating a
+                solid price floor.
+            </p>
+            <p>
+                Second, the penalty acts as an arbitrage resistant mechanism that secures the volume of SAFEMOON as a
+                reward for the
+                holders. In theory, the added LP creates a stability from the supplied LP by adding the tax to the
+                overall liquidity of
+                the token, thus increasing the tokens overall LP and supporting the price floor of the token. This is
+                different from the
+                burn function of other reflection tokens which is only beneficial in the short term from the granted
+                reduction of
+                supply.
+            </p>
+            <p>
+                As the SAFEMOON token LP increases, the price stability mirrors this function with the benefit of a
+                solid price floor
+                and cushion for holders. The goal here is to prevent the larger dips when whales decide to sell their
+                tokens later in
+                the game, which keeps the price from fluctuating as much as if there was no automatic LP function.
+            </p>
+            <p>
+                All of this is an effort to alleviate some of the troubles we have seen with the current DeFi reflection
+                tokens. We are
+                confident that this model and protocol will prevail over the outdated reflection tokens for these
+                reasons.
+            </p>
+            <div class="columns">
+                <div class="column is-6">
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th>NUMBER</th>
+                            <th>SHORTHAND</th>
+                        </tr>
+                        <tr>
+                            <td>Total Supply</td>
+                            <td>1,000,000,000,000,000</td>
+                            <td>1 Quadrillion</td>
+                        </tr>
+                        <tr>
+                            <td>Burned Dev Tokens</td>
+                            <td>223,000,000,000,000</td>
+                            <td>223 Trillion</td>
+                        </tr>
+                        <tr>
+                            <td>Fair Launch Supply</td>
+                            <td>777,000,000,000,000</td>
+                            <td>777 Trillion</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="column is-6"></div>
+            </div>
+            <span>Safemoon Protocol</span>
+            <p>SafeMoon employs 3 simple functions: Reflection + LP acquisition + Burn
+                In each trade, the transaction is taxed a 10%
+                fee, which is split 2 ways.
+            </p>
+            <p>5% fee = redistributed to all existing holders</p>
+            <p class="marginbottom">5% fee is split 50/50 half of which is sold by the contract into BNB, while the
+                other half of the
+                SAFEMOON tokens are
+                paired automatically with the previously mentioned BNB and added as a liquidity pair on Pancake
+                Swap.
+            </p>
+            <span>Safety</span>
+            <p>Step by step plan to ensure 100% safety.</p>
+            <div class="columns marginbottom">
+                <div class="column is-3">
+                    <div class="card_title">
+                        <p class="branding_p">Step 1</p>
+                    </div>
+                    <div class="card_img">
+                        <img src="/img/icons/whitepaper/step1.png" alt="">
+                        <div class="card_content">
+                            <p>Dev burned all tokens in Dev Wallet prior to launch</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-3">
+                    <div class="card_title">
+                        <p class="branding_p">Step 2</p>
+                    </div>
+                    <div class="card_img">
+                        <img src="/img/icons/whitepaper/step2.png" alt="">
+                        <div class="card_content">
+                            <p>Fair launch on DxSale</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-3">
+                    <div class="card_title">
+                        <p class="branding_p">Step 3</p>
+                    </div>
+                    <div class="card_img">
+                        <img src="/img/icons/whitepaper/step1.png" alt="">
+                        <div class="card_content">
+                            <p>LP locked on DxLocker for 4 years</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-3">
+                    <div class="card_title">
+                        <p class="branding_p">Step 4</p>
+                    </div>
+                    <div class="card_img">
+                        <img src="/img/icons/whitepaper/step2.png" alt="">
+                        <div class="card_content">
+                            <p>LP generated with every trade and locked on Pancake</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</div>
+</div>
