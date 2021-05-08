@@ -665,8 +665,8 @@ body {
   background-color: black;
 }
 
-.paddingtop16 {
-  padding-top: 16px !important;
+.paddingtop14 {
+  padding-top: 14px !important;
 }
 
 .top_header_name {
@@ -675,14 +675,22 @@ body {
 }
 
 .socials {
-  width: 18px;
-  
+  width: 22px;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .copyrights {
   float: left;
   color: white;
   font-size: 14px;
+}
+
+@media screen and (max-width: 800px) {
+  .copyrights {
+    float: none;
+  }
 }
 
 .underline {

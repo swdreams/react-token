@@ -59,6 +59,32 @@ TABLE OF CONTENTS
     }
 
     //Footer columns
+    @media screen and (max-width:800px) {
+        .paddingbottom20 {
+            padding-bottom: 20px !important;
+        }
+    }
+
+    @media screen and (max-width: 400px) {
+        .mobile_md {
+            display: none !important;
+        }
+        .mobile_sm {
+            display: block !important;
+        }
+    }
+
+    .mobile_sm {
+        display: none;
+        a {
+            font-size: 13px;
+            color: white;
+            &:hover {
+                color: lightgrey;
+            }
+        }
+    }
+
     .footer-columns {
         padding: 30px 0;
         position: relative;

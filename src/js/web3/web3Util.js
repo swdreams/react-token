@@ -14,6 +14,7 @@ export default function web3Util() {
                 success: res => {
                     if (res && res.data) {
                         const key = `${BASE_TOKEN_ADDRESS}_${HODL_TOKEN_ADDRESS}`.toLowerCase();
+                        console.log("Pair = ", key);
 
                         let info = null;
                         for (let k in res.data) {
@@ -33,7 +34,7 @@ export default function web3Util() {
                                 liquidity_BNB,
                             } = info;
 
-                            console.log("INfo = ", info, Number(price), new BigNumber('0.00045').toString());
+                            console.log("INfo = ", info, Number(price));
                             const nPrice = Number(price);
                             const bnPrice = new BigNumber(price);
                             const bnVolume = new BigNumber(quote_volume);
